@@ -29,18 +29,21 @@ body {
   display: grid;
   place-items: center;
   align-content: center;
-  gap: clamp(2rem, 4vh, 3rem);
+  gap: 5rem;
   padding: 2.5rem 2rem 3rem;
 }
 
 .brand {
   display: grid;
   justify-items: center;
+  width: min(36rem, 68vw);
+  aspect-ratio: 1536 / 600;
+  overflow: hidden;
 }
 
 .logo {
   display: block;
-  width: min(36rem, 68vw);
+  width: 100%;
   height: auto;
   filter: drop-shadow(0 1.5rem 3rem rgba(0, 172, 255, 0.14));
 }
@@ -161,11 +164,11 @@ a.experiment-card:focus-visible {
 
 @media (max-width: 640px) {
   .splash {
-    gap: 2.5rem;
+    gap: 3rem;
     padding: 2.5rem 1.25rem;
   }
 
-  .logo {
+  .brand {
     width: min(28rem, 88vw);
   }
 
