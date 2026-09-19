@@ -28,15 +28,15 @@ body {
 .splash {
   display: grid;
   place-items: center;
-  align-content: center;
-  gap: 5rem;
-  padding: 2.5rem 2rem 3rem;
+  align-content: start;
+  gap: 1.5rem;
+  padding: 0.75rem 2rem 1rem;
 }
 
 .brand {
   display: grid;
   justify-items: center;
-  width: min(36rem, 68vw);
+  width: min(30rem, 64vw);
   aspect-ratio: 1536 / 600;
   overflow: hidden;
 }
@@ -122,6 +122,21 @@ a.experiment-card:focus-visible {
   background: #fff;
 }
 
+.vortex-mark {
+  position: relative;
+  overflow: hidden;
+  background: #070b10;
+}
+
+.vortex-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+  filter: contrast(1.08) saturate(1.08);
+}
+
 .continuum-mark img {
   display: block;
   width: 100%;
@@ -157,19 +172,19 @@ a.experiment-card:focus-visible {
 .footer {
   display: flex;
   justify-content: center;
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 1rem;
   font-size: 0.82rem;
   letter-spacing: 0;
 }
 
 @media (max-width: 640px) {
   .splash {
-    gap: 3rem;
-    padding: 2.5rem 1.25rem;
+    gap: 1.5rem;
+    padding: 1rem 1.25rem 1.25rem;
   }
 
   .brand {
-    width: min(28rem, 88vw);
+    width: min(24rem, 84vw);
   }
 
   .experiment-grid {
