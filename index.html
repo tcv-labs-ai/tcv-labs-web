@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#070b10" />
-    <title>TCV Labs</title>
+    <title>TCV Labs — Apps and experiments</title>
+    <meta name="description" content="Explore TCV Labs apps and experiments in cryptocurrency, local-first memory, and financial tools." />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20261011" />
   </head>
   <body>
     <main class="splash">
@@ -21,16 +22,18 @@
       </header>
 
       <section class="experiments" aria-labelledby="experiments-title">
-        <p class="eyebrow">App experiments</p>
-        <h1 id="experiments-title">Where ideas become systems</h1>
+        <h1 id="experiments-title">Apps and experiments</h1>
+        <p class="introduction">TCV Labs builds and explores software for cryptocurrency, local-first memory, and everyday financial tools. Explore the projects below.</p>
+        <p class="link-note" id="new-tab-note">Project links open in a new tab.</p>
 
-        <div class="experiment-grid">
+        <div class="product-list">
           <a
-            class="experiment-card"
+            class="product-row"
             href="https://thecryptovortex.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open The Crypto Vortex"
+            aria-labelledby="vortex-title vortex-action"
+            aria-describedby="vortex-description new-tab-note"
           >
             <span class="app-icon vortex-mark">
               <img
@@ -38,19 +41,20 @@
                 alt=""
               />
             </span>
-            <span class="card-copy">
-              <span class="card-title">The Crypto Vortex</span>
-              <span class="card-description">Cryptocurrency, market strategy, and AI innovation.</span>
-              <span class="card-action">Open app <span aria-hidden="true">↗</span></span>
+            <span class="product-copy">
+              <span class="product-title" id="vortex-title">The Crypto Vortex</span>
+              <span class="product-description" id="vortex-description">Cryptocurrency, market strategy, and AI innovation.</span>
             </span>
+            <span class="product-action" id="vortex-action">Open app <span aria-hidden="true">↗</span></span>
           </a>
 
           <a
-            class="experiment-card"
+            class="product-row"
             href="https://capture.tcvlabs.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open Continuum private preview"
+            aria-labelledby="continuum-title continuum-action"
+            aria-describedby="continuum-description new-tab-note"
           >
             <span class="app-icon continuum-mark" aria-hidden="true">
               <img
@@ -58,30 +62,31 @@
                 alt=""
               />
             </span>
-            <span class="card-copy">
-              <span class="card-title">Continuum</span>
-              <span class="card-description">Private preview of a local-first memory layer for people and AI agents.</span>
-              <span class="card-action">Private preview <span aria-hidden="true">↗</span></span>
+            <span class="product-copy">
+              <span class="product-title" id="continuum-title">Continuum</span>
+              <span class="product-description" id="continuum-description">Private preview of a local-first memory layer for people and AI agents.</span>
             </span>
+            <span class="product-action" id="continuum-action">Private preview <span aria-hidden="true">↗</span></span>
           </a>
 
           <a
-            class="experiment-card"
+            class="product-row"
             href="https://moneyclock.tcvlabs.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open MoneyClock"
+            aria-labelledby="moneyclock-title moneyclock-action"
+            aria-describedby="moneyclock-description new-tab-note"
           >
             <img
               class="app-icon"
               src="./assets/money-clock-icon.png"
               alt=""
             />
-            <span class="card-copy">
-              <span class="card-title">MoneyClock</span>
-              <span class="card-description">Watch estimated interest accrue over time.</span>
-              <span class="card-action">Open app <span aria-hidden="true">↗</span></span>
+            <span class="product-copy">
+              <span class="product-title" id="moneyclock-title">MoneyClock</span>
+              <span class="product-description" id="moneyclock-description">Watch estimated interest accrue over time.</span>
             </span>
+            <span class="product-action" id="moneyclock-action">Open app <span aria-hidden="true">↗</span></span>
           </a>
         </div>
       </section>
